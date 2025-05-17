@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="UltraPassword by ricalNet">
+    <meta name="author" content="Risnanda Pascal">
+    <title>UltraPassword - ricalNet</title>
+    <link rel="icon" type="image/x-icon" href="../../img/profile.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8255c1cfb8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="logo">UltraPassword</h1>
+            <p class="tagline">Generate & Protect Your Digital Identity</p>
+        </header>
+
+        <main>
+            <div class="generator-card">
+                <div class="password-container">
+                    <div class="password-display">
+                        <span id="password" class="password-text"></span>
+                        <div class="password-actions">
+                            <button class="btn-icon" id="copy-btn" aria-label="Copy password">
+                                <i class="fas fa-copy"></i>
+                            </button>
+                            <button class="btn-icon" id="visibility-btn" aria-label="Toggle visibility">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <div class="setting-group">
+                        <div class="range-container">
+                            <input type="range" class="range-input" id="length" min="8" max="32" value="16">
+                            <span class="length-value" id="lengthValue">16</span>
+                        </div>
+                    </div>
+
+                    <div class="options-grid">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="uppercase" checked>
+                            <span>Uppercase (A-Z)</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="lowercase" checked>
+                            <span>Lowercase (a-z)</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="numbers" checked>
+                            <span>Numbers (0-9)</span>
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="symbols" checked>
+                            <span>Symbols (!@#$%)</span>
+                        </label>
+                    </div>
+
+                    <div class="strength-indicator">
+                        <span class="strength-label">Password Strength</span>
+                        <div class="strength-meter" id="strengthMeter">
+                            <div class="strength-bar"></div>
+                            <div class="strength-bar"></div>
+                            <div class="strength-bar"></div>
+                            <div class="strength-bar"></div>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary" id="generate-btn">
+                        <i class="fas fa-sync-alt"></i>
+                        Generate New Password
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4 class="footer-heading">UltraPassword</h4>
+                    <p class="footer-text">Securely generating passwords since 2025</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="../../index.html"><i class="fas fa-chevron-right"></i> ricalLinks</a></li>
+                        <li><a href="../../website/index.html"><i class="fas fa-chevron-right"></i> ricalNet</a></li>
+                        <li><a href="https://github.com/ricalnet/ricalnet.github.io" target="_blank"><i class="fas fa-chevron-right"></i> Source Code</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Connect</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com/risnandapascal" target="_blank" class="social-icon">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="https://instagram.com/rical_net" target="_blank" class="social-icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/risnandacandraabdurrozaq" target="_blank" class="social-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://discord.gg/nAVZkEwjYJ" target="_blank" class="social-icon">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">
+                    © ricalNet</a>. Designed by Risnanda Pascal
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="scripts.js"></script>
+    
+</body>
+</html>
